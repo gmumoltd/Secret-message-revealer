@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Mesage Revealer</title>
     
-  
+  <a href="form.html">Form</a>
 </head>
 <body>
     <div class="container">
         <h1>Welcome student</h1>
         <p id="p_tag">Click a button to reveal a message</p>
+        <p id="this"></p>
         <div class="row">
             <button onclick="document.getElementsByTagName('p')[0].innerHTML = '<h2>JavaScript is Powerful!</h2>'">innerHTML</button> 
         
@@ -24,8 +25,12 @@
         <div class="row">
             <button onclick="document.getElementById('p_tag').innerHTML = '<h2>this is a secret message3</h2>'">textContent</button>
         </div>
+        <br>
+        <div class="row">
+            <button onclick="createElement('this')">Click for new mesage</button>
+        </div>
 </div>
-    <script ></script>
+    <script src="assets/script.js"></script>
     
 </body>
 </html>
