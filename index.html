@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Mesage Revealer</title>
+    
+  
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome student</h1>
+        <p id="p_tag">Click a button to reveal a message</p>
+        <div class="row">
+            <button onclick="document.getElementsByTagName('p')[0].innerHTML = '<h2>JavaScript is Powerful!</h2>'">innerHTML</button> 
+        
+            
+        </div>
+        <br>
+        <div class="row">
+            <button onclick="document.getElementsByTagName('p')[0].innerHTML = '<h2>Second message</h2>'">innerText</button>
+        </div>
+        <br>
+        <div class="row">
+            <button onclick="document.getElementById('p_tag').innerHTML = '<h2>this is a secret message3</h2>'">textContent</button>
+        </div>
+</div>
+    <script ></script>
+    
+</body>
+</html>
